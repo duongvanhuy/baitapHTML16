@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let diemKT =parseFloat(prompt('Nhập vào điểm số bài kiểm tra',0));
+        let diemGki =parseFloat(prompt('Nhập vào điểm số bài kiểm tra giữa kì',0));
+        let diemCKi =parseFloat(prompt('Nhập vào điểm số bài kiểm tra cuối kì',0));
+        let hocLuc = (diemKT+diemGki*2+diemCKi*3)/6;
+        hocLuc.toFixed(2);
+        
+            if(hocLuc>=8 && hocLuc<=10){
+                document.write('Tổng điểm trung bình: '+hocLuc+'.Học sinh xếp loại giỏi');
+            }
+            else if(hocLuc>=6.5){
+                document.write('Tổng điểm trung bình: '+hocLuc+'Học sinh xếp loại khá');
+            }
+            else if(hocLuc>=5){
+                document.write('Tổng điểm trung bình: '+hocLuc+'Học sinh xếp loại trung bình');
+            }
+            else if(hocLuc>=0){
+                document.write('Tổng điểm trung bình: '+hocLuc+'Học sinh xếp loại yếu');
+            }
+       
+    </script>
+</body>
+</html>

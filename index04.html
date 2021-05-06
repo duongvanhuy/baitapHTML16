@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        let number1 = parseInt(prompt('Nhập vào số nguyên thứ nhất'));
+        let number2 =parseInt(prompt('Nhập vào số nguyên thứ 2'));
+        let number3 =parseInt(prompt('Nhập vào số nguyên thứ 3'));
+        let max = number1;
+        if(max > number2){
+            if(number2 > number3){
+                document.write('Max là: '+number1);
+            }
+            else {
+                if(number3>max){
+                    document.write('Max là: '+number3);
+                }
+                else{
+                    document.write('Max là: '+number1);
+                }
+            }
+        }
+        else{
+            max=number3;
+            if(max>number3){
+                document.write('Max là: '+number2);
+            }
+            else{
+                document.write('Max là: '+number3)
+            }
+        }
+    </script>
+</body>
+</html>
